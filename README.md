@@ -10,7 +10,7 @@ The interface has 10 range sliders, and 8 corresponding exponents buttons.
 
     var gui = require('dsp-interface');
 
-    gui.start(5001);
+    gui.start(5001); // optional port, defaults to 8012
 
     gui.line // a length 10 array
     gui.exp // a length 10 array ([0] and [1] do are empty, do not use);
@@ -21,6 +21,16 @@ The interface has 10 range sliders, and 8 corresponding exponents buttons.
     function(time){
       return Math.sin(time * Math.PI * (line1 * Math.pow(10, line3exp)))
     }
+
+**You can set your initial values like so:**
+
+    var mui = require('dsp-interface');
+
+    var values = [1,1,-10,1,1,1,1,1,1,1]; // there are 10 range sliders
+
+    var exponents = [0,0,1,1,2,2,3,3,3,3]; // only 8 lines have exponent switches. The first two indecies will always be zero!!!!!!
+
+    mui.start(5001, values, exponents)
 
 
 line[0] and line[1] return values 0,...,11 inclusive to correspond with either cranking it past ten, or for 12 octaves for each of the 12 note classes in the western scale. Why 12 octaves? You can't hear 7 hertz, but you can feel it!
