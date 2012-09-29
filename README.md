@@ -19,11 +19,8 @@ The interface has 10 range sliders, and 8 corresponding exponents buttons.
     gui.line // a length 10 array
     gui.exp // a length 10 array ([0] and [1] do are empty, do not use);
 
-    line3 = gui.line[2]
-    line3exp = gui.exp[2]
-
     function(time){
-      return Math.sin(time * Math.PI * (line1 * Math.pow(10, line3exp)))
+      return Math.sin( time * Math.PI * ( gui.line[3] * Math.pow(10, gui.exp[3]) ))
     }
 
 **You can set your initial values**
