@@ -74,7 +74,7 @@ var sock = shoe(function (stream) {
     
     stream.on('data', function(d){
       var c = d.split(',');
-      exports[ c[2] ][ parseFloat( c[1]) ] = eval( c[3] );
+      exports[ c[2] ][ c[1] ] = parseFloat( c[3] );
    });
 
 });
@@ -85,6 +85,8 @@ sock.install(self.server, '/barnstorm');
 
 function start_mdns(p){
   var browser = mdns.createBrowser(mdns.tcp('http'));
+
+  browser.on('error', console.log);
 
   browser.on('serviceUp', function(service) {
     if(service.txtRecord && service.txtRecord.name == 'barnstorm:' + p){

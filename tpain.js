@@ -6229,6 +6229,7 @@ function setSlideOpts (el, min, max, step, stream){
    max: max,
    vertical: true,
    hideInput: true,
+   animation: 'tween',
    callbacks: {
     change: [function(e){
       stream.write(el.id + e.value);
@@ -6291,14 +6292,12 @@ domready(function () {
     stream.on('data', function(a){
 	var a = a.split(',');
 	var b = a.splice(10,20);
-	console.log(a,b);
 	a.forEach(function(x, i){
 	    var v = val[i] - parseFloat(x);
-	    if(i < 2){
+	    if(i < 3){
 		fdSlider.increment('line,'+i+',val,', parseFloat(x))
 	    };
-	    if(i == 3) fdSlider.increment('line,'+i+',val,', parseFloat(x) / 12);
-	    if(i > 3) fdSlider.increment('line,'+i+',val,', parseFloat(x) * 10);
+	    if(i >= 3) fdSlider.increment('line,'+i+',val,', parseFloat(x) * 10);
 	});
 	b.forEach(function(y, i){
 	    var els = document.getElementsByName('line,'+i+',exp,')[y];

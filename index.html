@@ -10,11 +10,12 @@
       body{
         height:100%;
         width: 100%;
-        background: rgba(111, 222, 55, 1);
+        background: rgba(22, 22, 35, 1);
       }
       h4{
-        font-size:10px;
+        font-size:14px;
         display:inline-inline;
+        color: yellow;
       }
       .synth{
         height:100%;
@@ -31,7 +32,11 @@
       input[type=radio]{
         width: 10px;
         float:left;
-        display:inline-inline
+        display:inline-inline;
+      }
+
+      label:hover, input[type=radio]:hover{
+        cursor: pointer
       }
 
     </style>
@@ -82,18 +87,19 @@
       <div class="slide">
 
 	<select id="line,2,val," name="semitone">
-	  <option value="1/12">1/12</option>
-	  <option value="1/11">1/11</option>
-	  <option value="1/10">1/10</option>
-	  <option value="1/9">1/9</option>
-	  <option value="1/8">1/8</option>
-	  <option value="1/7">1/7</option>
-	  <option value="1/6">1/6</option>
-	  <option value="1/5">1/5</option>
-	  <option value="1/4">1/4</option>
-	  <option value="1/3">1/3</option>
-	  <option value="1/2">1/2</option>
-	  <option value="1" selected="selected">1</option>
+	  <option value="-12">1/12</option>
+	  <option value="-11">1/11</option>
+	  <option value="-10">1/10</option>
+	  <option value="-9">1/9</option>
+	  <option value="-8">1/8</option>
+	  <option value="-7">1/7</option>
+	  <option value="-6">1/6</option>
+	  <option value="-5">1/5</option>
+	  <option value="-4">1/4</option>
+	  <option value="-3">1/3</option>
+	  <option value="-2">1/2</option>
+	  <option value="0" selected="selected">1</option>
+	  <option value="1">1</option>
 	  <option value="2">2</option>
 	  <option value="4">3</option>
 	  <option value="4">4</option>
