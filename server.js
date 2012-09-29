@@ -4,6 +4,10 @@ var http = require('http')
   , mdns = require('mdns')
 ;
 
+var p = require.resolve('dsp-interface');
+
+var path = p.slice(0, p.lastIndexOf('/'));
+
 var self = module.exports;
 
 // API
@@ -38,22 +42,22 @@ self.stream = undefined; // when a connection is made this will be that
 
 function Server (req, res){
   if(req.url == '/') {
-    filed('./index.html').pipe(res)
+    filed(path + '/index.html').pipe(res)
   }
   else if(req.url == '/audio.js'){
-    filed('./audio.js').pipe(res)
+    filed(path + '/audio.js').pipe(res)
   }
   else if (req.url == '/touchy.js'){
-    filed('Touchy.js/touchy.js').pipe(res)
+    filed(path + '/Touchy.js/touchy.js').pipe(res)
   }
   else if (req.url == '/tpain.js'){
-    filed('./tpain.js').pipe(res)
+    filed(path + '/tpain.js').pipe(res)
   }
   else if (req.url == '/slider.css'){
-    filed('./fd-slider/css/fd-slider.css').pipe(res)
+    filed(path + '/fd-slider/css/fd-slider.css').pipe(res)
   }
   else if (req.url == '/slider.js'){
-    filed('./fd-slider/js/fd-slider.min.js').pipe(res)
+    filed(path + '/fd-slider/js/fd-slider.min.js').pipe(res)
   }
   else res.end()
 };
