@@ -1,8 +1,18 @@
-**Generic DSP Interface**
+**Basic DSP Interface**
 
     npm install dsp-interface
 
-Require this generic, real-time, socketed HTML5 / Touch compatible interface. It returns two arrays, which valaues you can change in your browser!
+Require this real-time, socketed HTML5 / Touch compatible interface for some of your DSP needs. It returns just two arrays, values and and exponents.
+
+    var mui = require('dsp-interface');
+
+    mui.val[0] = 0 - 11 inclsuive, interval 1  
+    mui.val[1] = 10 - 11 inclusive, interval 1
+    mui.val[2] = -12 - 12 inclusive, interval 1 
+    mui.val[3-9] = 0.0 - 9.9 inslcusive, interval 0.1
+
+    mui.epx[0-1] = 0
+    mui.exp[2-9] = 0-3 inclusive, inetrval 1
 
 ![pretty generic!](http://i.imgur.com/ix99W.jpg)
 
@@ -29,7 +39,7 @@ The interface has 10 range sliders, and 8 corresponding exponents buttons.
 
     var values = [1, 1, -10, 1.1, 2.2, 3.3, 4.4, 5.5, 6.9, 8.2]; // there are 10 range sliders
 
-    var exponents = [0, 0, 1, 1, 2, 2, 3, 3, 3, 3]; // only 8 lines have exponent switches. The first two indecies will always be zero!!!!!!
+    var exponents = [0, 0, 1, 1, 2, 2, 3, 3, 3, 3]; // also ten, but only 8 lines have exponent switches. The first two indecies will always be zero!!!!!!
 
     mui.start(5001, values, exponents)
 
