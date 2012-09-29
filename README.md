@@ -1,6 +1,6 @@
 **Generic DSP Interface**
 
-Require this generic HTML5 / Touch compatible web socket interface. It returns to arrays, which valaues you can change in your browser.
+Require this generic HTML5 / Touch compatible web socket interface. It returns two arrays, which valaues you can change in your browser.
 
 **POSTED:** This is a slow, string transporting, pseudo midi signal. The GUI is a clumsy, DOM based implementation with non-continunous values. And I traded multi-touch + non working range sliders for single touch capable sliders that actually work! So it works on the ipad.
 
@@ -22,7 +22,7 @@ The interface has 10 range sliders, and 8 corresponding exponents buttons.
       return Math.sin(time * Math.PI * (line1 * Math.pow(10, line3exp)))
     }
 
-**You can set your initial values like so:**
+**You can set your initial values**
 
     var mui = require('dsp-interface');
 
@@ -32,6 +32,7 @@ The interface has 10 range sliders, and 8 corresponding exponents buttons.
 
     mui.start(5001, values, exponents)
 
+**the interface will start at those values, and will remember previous settings if you refresh that tab!**
 
 line[0] and line[1] return values 0,...,11 inclusive to correspond with either cranking it past ten, or for 12 octaves for each of the 12 note classes in the western scale. Why 12 octaves? You can't hear 7 hertz, but you can feel it!
 
