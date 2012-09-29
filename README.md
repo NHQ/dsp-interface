@@ -51,9 +51,6 @@ The interface has 10 range sliders, and 8 corresponding exponents buttons.
 
 * ui.exp channels all return values 0-3, meant to be used to define the exponent for the their corresponding channels values. exp[0] and exp[1] are always zero.
 
-    npm install dsp-interface
-
-
 TODO:
 
 * Add incr / decr buttons to range sliders
