@@ -1,7 +1,5 @@
 var shoe = require('shoe');
 var domready = require('domready');
-var es = require('event-stream');
-var freqz = require('frequencies');
 
 var el0 = document.getElementById('line,0,val,');
 var el1 = document.getElementById('line,1,val,');
