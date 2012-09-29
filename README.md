@@ -16,11 +16,11 @@ The interface has 10 range sliders, and 8 corresponding exponents buttons.
 
     gui.start(5001); // optional port, defaults to 8012
 
-    gui.line // a length 10 array
+    gui.val // a length 10 array
     gui.exp // a length 10 array ([0] and [1] are always zero);
 
     function(time){
-      return Math.sin( time * Math.PI * ( gui.line[3] * Math.pow(10, gui.exp[3]) ))
+      return Math.sin( time * Math.PI * ( gui.val[3] * Math.pow(10, gui.exp[3]) ))
     }
 
 **You can set your initial values**
@@ -37,13 +37,13 @@ The interface has 10 range sliders, and 8 corresponding exponents buttons.
 
 **API**
 
-*interface.line*
+*interface.val*
 
-* line[0] and line[1] have range [0,11] inclusive to correspond with either cranking it past ten, or for 12 octaves for each of the 12 note classes in the western scale. Why 12 octaves? You can't hear 7 hertz, but you can feel it!
+* val[0] and val[1] have range [0,11] inclusive to correspond with either cranking it past ten, or for 12 octaves for each of the 12 note classes in the western scale. Why 12 octaves? You can't hear 7 hertz, but you can feel it!
 
-* line[2]'s range is [-12, 12] inclusive (for semitones). It is the only line with negative values.
+* val[2]'s range is [-12, 12] inclusive (for semitones). It is the only line with negative values.
 
-* lines 3-9 have range [0, .9.9] at intervals of 0.1. 
+* vals 3-9 have range [0, .9.9] at intervals of 0.1. 
 
 *interface.exp*
 
