@@ -17,7 +17,7 @@ The interface has 10 range sliders, and 8 corresponding exponents buttons.
     gui.start(5001); // optional port, defaults to 8012
 
     gui.line // a length 10 array
-    gui.exp // a length 10 array ([0] and [1] do are empty, do not use);
+    gui.exp // a length 10 array ([0] and [1] are always zero);
 
     function(time){
       return Math.sin( time * Math.PI * ( gui.line[3] * Math.pow(10, gui.exp[3]) ))
