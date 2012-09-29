@@ -36,7 +36,9 @@ The interface has 10 range sliders, and 8 corresponding exponents buttons.
 
     mui.start(5001, values, exponents)
 
-**the interface will start at those values, and will remember previous settings if you refresh that tab!**
+**the interface will start at those values**
+
+* Also note: current settings are preserved after refreshing the browser*
 
 line[0] and line[1] return values 0,...,11 inclusive to correspond with either cranking it past ten, or for 12 octaves for each of the 12 note classes in the western scale. Why 12 octaves? You can't hear 7 hertz, but you can feel it!
 
