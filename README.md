@@ -37,13 +37,19 @@ The interface has 10 range sliders, and 8 corresponding exponents buttons.
 
 * Also note: current settings are preserved after refreshing the browser*
 
-line[0] and line[1] return values 0,...,11 inclusive to correspond with either cranking it past ten, or for 12 octaves for each of the 12 note classes in the western scale. Why 12 octaves? You can't hear 7 hertz, but you can feel it!
+**API**
 
-line[2] returns range [-12, 12] inclusive 
+*interface.line*
 
-lines 3-9 return values 0-9.9 at intervals of 0.1. 
+* line[0] and line[1] return values [0,11] inclusive to correspond with either cranking it past ten, or for 12 octaves for each of the 12 note classes in the western scale. Why 12 octaves? You can't hear 7 hertz, but you can feel it!
 
-ui.exp channels all return values 0-3, meant to be used to define the exponent for the their corresponding channels values. exp[0] and exp[1] are always zero.
+* line[2] returns range [-12, 12] inclusive 
+
+* lines 3-9 return values 0-9.9 at intervals of 0.1. 
+
+*interface.exp*
+
+* ui.exp channels all return values 0-3, meant to be used to define the exponent for the their corresponding channels values. exp[0] and exp[1] are always zero.
 
     npm install dsp-interface
 
