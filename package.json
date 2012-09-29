@@ -1,7 +1,7 @@
 {
   "name": "dsp-interface",
-  "version": "0.0.2",
-  "description": "generic HTML5 interface for digital signal processing",
+  "version": "0.2.0",
+  "description": "generic, socketed HTML5 interface for digital signal processing with sliders and exponents",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:NHQ/dsp-interface"
+    "url": "git@github.com:NHQ/dsp-interface.git"
   },
   "keywords": [
     "interface",
