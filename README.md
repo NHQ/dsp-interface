@@ -41,15 +41,17 @@ The interface has 10 range sliders, and 8 corresponding exponents buttons.
 
 *interface.line*
 
-* line[0] and line[1] return values [0,11] inclusive to correspond with either cranking it past ten, or for 12 octaves for each of the 12 note classes in the western scale. Why 12 octaves? You can't hear 7 hertz, but you can feel it!
+* line[0] and line[1] have range [0,11] inclusive to correspond with either cranking it past ten, or for 12 octaves for each of the 12 note classes in the western scale. Why 12 octaves? You can't hear 7 hertz, but you can feel it!
 
-* line[2] returns range [-12, 12] inclusive 
+* line[2]'s range is [-12, 12] inclusive (for semitones). It is the only line with negative values.
 
-* lines 3-9 return values 0-9.9 at intervals of 0.1. 
+* lines 3-9 have range [0, .9.9] at intervals of 0.1. 
 
 *interface.exp*
 
-* ui.exp channels all return values 0-3, meant to be used to define the exponent for the their corresponding channels values. exp[0] and exp[1] are always zero.
+* ui.exp channels 2-9 return values 0-3, meant to be used to define the exponent for the their corresponding channels values. exp[0] and exp[1] are always zero.
+
+* exp[0] and exp[1] are not used, and always zero
 
 TODO:
 
