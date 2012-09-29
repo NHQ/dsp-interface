@@ -27,9 +27,9 @@ The interface has 10 range sliders, and 8 corresponding exponents buttons.
 
     var mui = require('dsp-interface');
 
-    var values = [1,1,-10,1,1,1,1,1,1,1]; // there are 10 range sliders
+    var values = [1, 1, -10, 1.1, 2.2, 3.3, 4.4, 5.5, 6.9, 8.2]; // there are 10 range sliders
 
-    var exponents = [0,0,1,1,2,2,3,3,3,3]; // only 8 lines have exponent switches. The first two indecies will always be zero!!!!!!
+    var exponents = [0, 0, 1, 1, 2, 2, 3, 3, 3, 3]; // only 8 lines have exponent switches. The first two indecies will always be zero!!!!!!
 
     mui.start(5001, values, exponents)
 
