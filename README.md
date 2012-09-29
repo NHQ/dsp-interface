@@ -1,12 +1,12 @@
 **Generic DSP Interface**
 
-Require this generic HTML5 / Touch compatible web socket interface. It returns two arrays, which valaues you can change in your browser.
+Require this generic, real-time, socketed HTML5 / Touch compatible web socket interface. It returns two arrays, which valaues you can change in your browser.
 
 ![pretty generic!](http://i.imgur.com/ix99W.jpg)
 
-**POSTED:** This is a slow, string transporting, pseudo midi signal. The GUI is a clumsy, DOM based implementation with non-continunous values. And I traded multi-touch + non working range sliders for single touch capable sliders that actually work! So it works on the ipad.
+**POSTED:** This is a string transporting, float parsing, pseudo midi signal! The GUI is a clumsy, DOM based implementation with non-continunous values! And I traded multi-touch non working range sliders for single touch capable sliders that actually work... so it works on the ipad.
 
-Future version will sweet tho: binary transprt, real midi, canvas face, continuous value ranges.
+Future version will be nice tho: binary transport, real midi, canvas face, continuous value ranges.
 
 The interface has 10 range sliders, and 8 corresponding exponents buttons.
 
@@ -45,7 +45,6 @@ lines 3-9 return values 0-9.9 at intervals of 0.1.
 ui.exp channels all return values 0-3, meant to be used to define the exponent for the their corresponding channels values. exp[0] and exp[1] are always zero.
 
     npm install dsp-interface
-
 
 
 TODO:
