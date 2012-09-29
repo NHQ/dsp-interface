@@ -8,7 +8,7 @@ Future version will sweet tho: binary transprt, real midi, canvas face, continuo
 
 The interface has 10 range sliders, and 8 corresponding exponents buttons.
 
-    var gui = require('dsp-interface').listen(5001);
+    var gui = require('dsp-interface');
 
     gui.start(5001);
 
