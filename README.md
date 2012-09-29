@@ -2,6 +2,8 @@
 
 Require this generic HTML5 / Touch compatible web socket interface. It returns two arrays, which valaues you can change in your browser.
 
+![pretty generic!](http://i.imgur.com/ix99W.jpg)
+
 **POSTED:** This is a slow, string transporting, pseudo midi signal. The GUI is a clumsy, DOM based implementation with non-continunous values. And I traded multi-touch + non working range sliders for single touch capable sliders that actually work! So it works on the ipad.
 
 Future version will sweet tho: binary transprt, real midi, canvas face, continuous value ranges.
