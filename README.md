@@ -1,5 +1,7 @@
 **Generic DSP Interface**
 
+    npm install dsp-interface
+
 Require this generic, real-time, socketed HTML5 / Touch compatible web socket interface. It returns two arrays, which valaues you can change in your browser.
 
 ![pretty generic!](http://i.imgur.com/ix99W.jpg)
