@@ -35,8 +35,6 @@ The interface has 10 range sliders, and 8 corresponding exponents buttons.
 
 **the interface will start at those values**
 
-* Also note: current settings are preserved after refreshing the browser*
-
 **API**
 
 *interface.line*
